@@ -4,22 +4,42 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+#datetime-picker {
+  margin-bottom: 10px;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+#start-btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.field {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 14px;
 }
